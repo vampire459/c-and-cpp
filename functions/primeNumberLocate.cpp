@@ -19,7 +19,7 @@ void primeNum(int number)
     cout << "Is it a prime number?" << endl;
 
     bool isPrimeNumber = true;
-`
+
     for (int i = 2 ; i < number; i++)
     {
         if (number%i == 0)
@@ -32,5 +32,7 @@ void primeNum(int number)
     if(isPrimeNumber)
         cout << "yes prime number\n"; 
     else
+    {
         cout << "not prime number\n"; 
+    }
 }
