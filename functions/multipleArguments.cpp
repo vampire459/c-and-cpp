@@ -4,15 +4,14 @@ using namespace std;
 
 // funtion prototyping
 
-void greet(string nameUser);
+void greet(string nameUser, string city, int age);
 
 int main()
 {
-    greet("some random name");
-    greet("aryan singh");
+    greet("aryan singh", "calcutta", 18);
 }
 
-void greet(string nameUser)
+void greet(string nameUser, string city, int age)
 {
-    cout << "Hello, " << nameUser << endl;
+    cout << "Hello, I am " << nameUser << ". I live in "<< city << ". I am very old " << age << endl;
 }
