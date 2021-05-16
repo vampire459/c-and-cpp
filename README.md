@@ -10,7 +10,6 @@
 
 I am learning.
 
-learning material: https://www.geeksforgeeks.org/c-plus-plus/
 
 ### Who is this?
 
