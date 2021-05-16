@@ -19,8 +19,8 @@ void primeNum(int number)
     cout << "Is it a prime number?" << endl;
 
     bool isPrimeNumber = true;
-
-    for (int i = 2; i < number; i++)
+`
+    for (int i = 2 ; i < number; i++)
     {
         if (number%i == 0)
         {
