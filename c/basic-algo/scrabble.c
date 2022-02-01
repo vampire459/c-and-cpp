@@ -1,82 +1,89 @@
-#include <cs50.h>
 #include <stdio.h>
-#include <ctype.h>
-#include <string.h>
 
-int POINTS[] = {1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10};
 
-int small_letters[] = {97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122};
-
-int capital_letters[] = {65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90};
-
-int temp_Points [] = {};
-
-int compute_score(string word);
 
 int main(void)
 {
-    string word1 = get_string("Player 1: ");
-    string word2 = get_string("Player 2: ");
+    int 
+    i,n=1,amount,bill,paid;
 
-    int score1 = compute_score(word1);
-    int score2 = compute_score(word2);
+// Takes input form the user 
+        printf("\n👋Hi!\n How can I help you today?\n");    
+        printf("\n💰Total Bill:\n");    
+        scanf("%i", &bill);
 
-    if (score1 > score2)
+// Takes the total bill amount of the user
+        printf("\n💸Amount paid by the user:\n");    
+        scanf("%i", &paid);
+
+// Makes the AMOUNT 
+    if (paid>bill)
     {
-        printf("Player 1 wins");
+        amount = (paid-bill);
+        printf("\nAmount to be paid to the user is:%i\n", amount);
     }
-    else if (score2 > score1)
+    else if (bill>paid) 
     {
-        printf("Player 2 wins");
+        amount = (paid-bill);
+        i = (-1*amount);
+        printf("\n👆Ask the coustomer to pay:%i\n", i);   
     }
-    else
+    else (bill==paid);
     {
-        printf("Tie");
+        printf("\n");
     }
+
+/* 
+        End data collection here
+*/
+        //2000 INR
+        while (amount>=2000 && amount!=(-n))
+        {
+            amount=amount-2000;
+            printf("Pay a bill of 2000 INR🍣\n");
+        }
+        while (amount>=500 && amount!=(-n))
+        {
+            amount=amount-500;
+            printf("Pay a bill of 500 INR✋👌👌\n");
+        }
+        while (amount>=200 && amount!=(-n))
+        {
+            amount=amount-200;
+            printf("Pay a bill of 200 INR✌👌👌\n");
+        }while (amount>=100 && amount!=(-n))
+        {
+            amount=amount-100;
+            printf("Pay a bill of 100 INR👆👌👌\n");
+        }while (amount>=50 && amount!=(-n))
+        {
+            amount=amount-50;
+            printf("Pay a bill of 50 INR👋👌\n");
+        }while (amount>=20 && amount!=(-n))
+        {
+            amount=amount-20;
+            printf("Pay a bill of 20 INR👐👐\n");
+        }while (amount>=10 && amount!=(-n))
+        {
+            amount=amount-10;
+            printf("Pay a bill of 10 INR👐\n");
+        }while (amount>=2000 && amount!=(-n))
+        {
+            amount=amount-5;
+            printf("Pay a bill of 5 INR✋\n");
+        }while (amount>=2 && amount!=(-n))
+        {
+            amount=amount-2;
+            printf("Pay a bill of 2 INR✌\n");
+        }while (amount>=1 && amount!=(-n))
+        {
+            amount=amount-1;
+            printf("Pay a coin of 1 INR👆\n");
+        }
+        printf("Good Day!\n");
+        
+
+    return 0;
+        
 }
 
-int compute_score(string word)
-{
-    int score = 0;
-    //Compute and return score 
-    for (int i = 0; i < strlen(word) /*checks the length of the entered string*/; i++)
-    {
-        // checks if the letter is upper
-        if (isupper(word[i]))
-        {
-            // if the letter is upper find the words from capital_letters array according to ASCII
-            // if capital letter is found takes its index and assign points to temp_Points array accourding to the index
-            // adds tem_points value to int score to calculate the total score
-            for (int f = 0; f < sizeof(capital_letters); f++)
-            {
-                if (word[i] == capital_letters[f])
-                {
-                    temp_Points[i] = POINTS[f];
-                    score += temp_Points[i];
-                }
-            } // isupper() and islower() are given by the cs50 library
-        }
-        else if (islower(word[i]))
-        {
-            // if the letter is small find the words from small_letters array according to ASCII
-            // if small letter is found takes its index and assign points to temp_Points array accourding to the index
-            // adds tem_points value to int score to calculate the total score
-            for (int f = 0; f < sizeof(small_letters); f++)
-            {
-                if (word[i] == small_letters[f])
-                {
-                    temp_Points[i] = POINTS[f];
-                    score += temp_Points[i];
-                }
-            }
-        }
-        // if the word contains anything other than aplhabets this helps to ignore them
-        else
-        {
-            i += 1;
-        }
-    }
-    // returns Score
-    return score;
-
-}
