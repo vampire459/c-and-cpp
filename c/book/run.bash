@@ -15,4 +15,7 @@ touch program.c
 echo "Now adding it to the local repo"
 git add $varname.c
 
+echo "List of all files in this dir:"
+ls
+
 echo "bye"
