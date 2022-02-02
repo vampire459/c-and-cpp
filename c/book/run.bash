@@ -12,6 +12,8 @@ mv program.c $varname.c
 rm a.out
 touch program.c
 
+rm bin.c
+
 echo "Now adding it to the local repo"
 git add $varname.c
 
