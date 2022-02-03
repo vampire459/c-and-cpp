@@ -1,5 +1,5 @@
 # program is self explanatory
-echo "Compiling and the program for testing"
+echo "Compiling and running the program for testing"
 
 gcc -s program.c
 ./a.out
