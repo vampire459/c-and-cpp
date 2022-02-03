@@ -19,7 +19,7 @@ void main() {
     while (far <= upper)
     {
         
-        cels = (5/9) * (far - 32);
+        cels = (5) * (far - 32) / (9);
         
         printf("%d\t%d\n", far, cels);
         far = far + step;
