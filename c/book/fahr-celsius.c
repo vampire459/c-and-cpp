@@ -1,39 +1,23 @@
 #include <stdio.h>
 
 void main() {
-    
-    /* 
-        variables and arithmetic
-        C = (5/9)(F-32)
-     
-    */
-
-    int far, cels;
+    float fahr, celsius;
     int lower, upper, step;
 
-    lower = 0;       /* lower limit */
-    upper = 300;     /* Upper limit */
-    step= 20;        /* Step size */
+    lower = 0;
+    upper = 300;
+    step = 20;
 
-    far = lower;
-    while (far <= upper)
+    fahr = lower;
+    while (fahr <= upper)
     {
+        celsius = (5.0/9.0) * (fahr-32.0);
         
-        cels = (5) * (far - 32) / (9);
+        printf("%3.0f %6.3f\n", fahr, celsius);
         
-        printf("%3d\t%8d\n", far, cels);
+        // 3.0, 6.3 is the defined width of the output
 
-        /* 
-
-            the number before d specifies what 
-            the width aka position of the first one should be. just run it
-
-        */
-
-        far = far + step;
-
+        fahr = fahr + step;
     }
     
-
-
 }
