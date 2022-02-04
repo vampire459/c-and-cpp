@@ -21,7 +21,15 @@ void main() {
         
         cels = (5) * (far - 32) / (9);
         
-        printf("%d\t%d\n", far, cels);
+        printf("%3d\t%8d\n", far, cels);
+
+        /* 
+
+            the number before d specifies what 
+            the width aka position of the first one should be. just run it
+
+        */
+
         far = far + step;
 
     }
