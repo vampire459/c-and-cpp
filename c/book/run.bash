@@ -8,9 +8,8 @@ echo "If the test has gone ok continue by pressing enter or press ctrl + c to ex
 
 echo "New program name [don't specify extension]: " 
 read varname
-mv program.c $varname.c
+cp program.c $varname.c
 rm a.out
-touch program.c
 
 rm bin.c
 
