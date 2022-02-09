@@ -2,9 +2,10 @@
 
 int main() {
 
-    int i;
-    
-    for(i=0; i<=10; i++){
-        printf("hello\n");                        
-    }
+int c ;
+    c = getchar();
+    while (c != EOF) {
+        putchar(c);
+        c = getchar();
+}
 }
