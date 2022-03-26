@@ -12,5 +12,5 @@ authored by Aryan Singh
 |[divisionBetweenTwoNums-typecasting.c](https://github.com/zer0as/c-and-cpp/blob/main/c/ES-CS201/divisionBetweenTwoNums-typecasting.c)|Program to add two user defined number-Typecasting|
 |[swapTwoValuesWithThirdVar.c](https://github.com/zer0as/c-and-cpp/blob/main/c/ES-CS201/swapTwoValuesWithoutThirdVar.c)|Program to swap two variables with a third variable|
 |[swapTwoValuesWithoutThirdVar.c](https://github.com/zer0as/c-and-cpp/blob/main/c/ES-CS201/swapTwoValuesWithoutThirdVar.c)|Program to swap two variables without a third variable|
-|[averageOfFiveNums.c](https://github.com/zer0as/c-and-cpp/blob/main/c/ES-CS201/averageOfFiveNums.c)||
+|[averageOfFiveNums.c](https://github.com/zer0as/c-and-cpp/blob/main/c/ES-CS201/averageOfFiveNums.c)|Program to find average of five numbers|
 <!-- |[.c](https://github.com/zer0as/c-and-cpp/blob/main/c/ES-CS201/.c)|| -->
