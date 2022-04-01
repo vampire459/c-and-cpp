@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/* program to check even or odd number */
+/* program to check positive or negative */
 
 void main() {
     int i_num, i_switch;
