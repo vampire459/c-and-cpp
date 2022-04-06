@@ -27,12 +27,12 @@ void prime()
     for (i_loop = 2; i_loop < i_limit; i_loop++)
     {
 
-
         while (i_loop/2 != 0)
         {
             printf("%d\n",i_loop);
         }
         i_loop++;
+
     }
     
 }

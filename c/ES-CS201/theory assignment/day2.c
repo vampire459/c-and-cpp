@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/* Get a^b with the pow function */
+/* Get a^b without the pow function */
 
 void main() {
 
